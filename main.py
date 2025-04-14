@@ -59,10 +59,7 @@ def preprocess_input(log):
 
 
 #################### la BD ###############################
-graph = Graph("neo4j://localhost:7687", auth=("neo4j", ""))
-
-
-from py2neo import Graph, Node, Relationship
+graph = Graph("https://console-preview.neo4j.io/projects/2c1121dd-44cd-49a7-9322-d55130886578/instances", auth=("neo4j", "3N3pP_mAhZxdT9J_GY9diTO9vS2bSs8-flH6M0JuH8A"))
 
 # Connexion à Neo4j
 # Use your Neo4j AuraDB connection URL and credentials here
