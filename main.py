@@ -62,8 +62,11 @@ def preprocess_input(log):
 graph = Graph("https://console-preview.neo4j.io/projects/2c1121dd-44cd-49a7-9322-d55130886578/instances", auth=("neo4j", "3N3pP_mAhZxdT9J_GY9diTO9vS2bSs8-flH6M0JuH8A"))
 
 # Connexion à Neo4j
-# Use your Neo4j AuraDB connection URL and credentials here
-graph = Graph("neo4j+s://<YOUR-INSTANCE>.databases.neo4j.io:7687", auth=("neo4j", "<YOUR-PASSWORD>"))
+# Note: Ces informations sensibles devraient être dans les secrets
+graph = Graph(
+    "neo4j+s://YOUR-NEO4J-URI:7687",  # Remplacez par votre URI
+    auth=("neo4j", "YOUR-PASSWORD")    # Remplacez par vos identifiants
+)
 
 def insert_log_with_py2neo(log):
     try:
