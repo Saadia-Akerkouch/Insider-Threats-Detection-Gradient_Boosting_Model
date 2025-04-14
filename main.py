@@ -65,7 +65,8 @@ graph = Graph("neo4j://localhost:7687", auth=("neo4j", ""))
 from py2neo import Graph, Node, Relationship
 
 # Connexion à Neo4j
-graph = Graph("bolt://localhost:7687", auth=("neo4j", "password"))  # adapte l'URL et le mot de passe !
+# Use your Neo4j AuraDB connection URL and credentials here
+graph = Graph("neo4j+s://<YOUR-INSTANCE>.databases.neo4j.io:7687", auth=("neo4j", "<YOUR-PASSWORD>"))
 
 def insert_log_with_py2neo(log):
     try:
