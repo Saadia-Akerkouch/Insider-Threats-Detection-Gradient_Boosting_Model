@@ -80,6 +80,4 @@ The connection to Neo4j is configured with the following variables in `main.py` 
 
 The project is configured to be deployed on Replit.
 
-## License
 
-All rights reserved.
