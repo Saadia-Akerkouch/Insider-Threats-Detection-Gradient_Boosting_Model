@@ -1,8 +1,7 @@
-Flask
-flask-cors
+flask
 pandas
-scikit-learn
 numpy
+os
 joblib
 neo4j
 py2neo
