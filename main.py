@@ -53,9 +53,9 @@ def preprocess_input(log):
 
 
 # ================== Connexion à la BD ========================
-NEO4J_URI = "neo4j+s://8f4266b6.databases.neo4j.io" 
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "3N3pP_mAhZxdT9J_GY9diTO9vS2bSs8-flH6M0JuH8A"
+NEO4J_URI = "" 
+NEO4J_USER = ""
+NEO4J_PASSWORD = ""
 
 graph = Graph(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
